@@ -1,0 +1,197 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.hero_title {
+    animation: fadeIn 2s ease-in forwards; 
+    animation-delay: 0s;
+}
+
+
+
+.position {
+    padding-top: 120px;
+}
+
+.hero {
+    display: flex;
+}
+
+.design {
+    position: absolute;
+    right: 0;
+}
+
+.introduce_inner {
+    width: 50%;
+}
+
+.hero_title {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #091133;
+    margin: 0 0 33px;
+}
+
+.introduce_inner {
+    margin-top: 0;
+}
+
+.introduce_inner p {
+    font-weight: 400;
+    line-height: 26px;
+    color:#6F7CB2;
+}
+
+.hero h3 {
+    color: #091133;
+    font-weight: 500;
+}
+
+.two-column {
+    display: flex;
+    margin-top: 45px;
+}
+
+.two-column p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 10px;
+    color: #5D6970;
+}
+
+.two-column h3 {
+    margin: 20px 0 10px;
+    font-size: 16px;
+}
+
+.left-column {
+    width: 50%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) { 
+    
+    .hero {
+        flex-direction: column;
+    }
+
+    .introduce_inner {
+        width: 100%;
+    }
+
+    .introduce_inner p {
+        text-align: justify;
+    }
+
+    .design {
+        position: static;
+        display: flex;
+        width: 100%;
+    }
+
+    .design img {
+        width: 100%;
+    }
+
+    .hero_title {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .two-column {
+        flex-direction: column;
+    }
+
+    .two-column img {
+        width: 10%;
+
+    }
+
+    .two-column h3 {
+        font-size: 20px;
+    }
+
+    .two-column p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .hero {
+        padding-top: 20px;
+    }
+
+    .hero_title {
+        font-size: 40px;
+    }
+
+    .hero {
+        flex-direction: row;
+    }
+
+    .design {
+        position: static;
+        display: flex;
+        width: 50%;
+    }
+
+    .design img {
+        position: absolute;
+        width: 50%;
+        padding-right: 0;
+    }
+
+    .position {
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .hero {
+        padding-bottom: 100px;
+    }
+
+    .hero_title h1 {
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    .introduce_inner p{
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .two-column img {
+        width: 20%;
+    }
+
+    .two-column h3 {
+        font-size: 30px;
+    }
+
+    .design img {
+        width: 100%;
+    }
+
+    .introduce_inner {
+        width: 50%;
+    }
+
+    .design {
+        width: 50%;
+    }
+}
